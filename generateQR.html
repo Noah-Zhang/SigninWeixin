@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>generateQR</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/flat-ui.css" rel="stylesheet">
+	<link href="docs/assets/css/demo.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<body>
+
+<div class="container">
+	
+	<!-- 导航栏 -->
+      <div class="row demo-row">
+        <div class="col-xs-12">
+          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="#">扫码签到</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Home<span class="navbar-unread">1</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product <b class="caret"></b></a>
+                  <span class="dropdown-arrow"></span>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">生成二维码</a></li>
+                    <li><a href="#">查询签到情况</a></li>
+                    <li><a href="#">参与抽奖</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">更多</a></li>
+                  </ul>
+                </li>
+                <li><a href="#fakelink">About Us</a></li>
+               </ul>
+               <form class="navbar-form navbar-right" action="#" role="search">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn"><span class="fui-search"></span></button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div><!-- /.navbar-collapse -->
+          </nav><!-- /navbar -->
+        </div>
+      </div> <!-- /row -->
+
+
+    <div style="padding-left:200px">
+
+      	<div class="row">
+      		<div class="col-xs-2">
+      		<label>会议主题：</label>
+      		</div>
+
+      		<div class="col-xs-4">
+      			<div class="form-group">
+      				<input type="text" value="" placeholder="Theme" class="form-control" />
+      			</div>
+      		</div>
+      	</div>
+      	<div class="row">
+      		<div class="col-xs-2">
+      		<label>会议时间：</label>
+      		</div>
+
+      		<div class="col-xs-4">
+      			<div class="form-group">
+      				<input type="text" value="" placeholder="Time" class="form-control" />
+      			</div>
+      		</div>
+      	</div>
+      	<div class="row">
+      		<div class="col-xs-2">
+      		<label>会议年级：</label>
+      		</div>
+
+      		<div class="col-xs-4">
+      			<div class="form-group">
+      				<input type="select" value="" placeholder="Grade" class="form-control" />
+      			</div>
+      		</div>
+      	</div>
+
+      	<div class="row" style="padding-left:60px">
+      		<div class="col-xs-2">
+      			<a href="#" class="btn btn-block btn-lg btn-primary">生成QR</a>
+      		</div>
+      		<div class="col-xs-2">
+      			<a href="#" class="btn btn-block btn-lg btn-info">保存图片</a>
+      		</div>
+      	</div>
+
+
+        <img src="images/qr/qr.jpg" class="qr">
+
+</div>
+
+     
+
+</div>
+
+
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
+
+</body>
+
+
+
+
+<footer>
+  <div class="clearfix footerright" >
+  <p class="pull-right"><a href="index.html">返回首页</a></p>
+  <p class="pull-left">©计算机学院新媒体工作室</p>
+  </div>
+</footer>
+
+</html>

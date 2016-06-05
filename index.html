@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/flat-ui.css" rel="stylesheet">
+	<link href="docs/assets/css/demo.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="login">
+		<div class="login-screen">
+			<div class="login-icon">
+				<img src="images/login/qr.jpg" alt="Welcome to Mail App" />
+				<h4>Welcome to <small>CUMT CS</small></h4>
+			</div>
+
+			<div class="login-form">
+				<div class="control-group">
+				 	<input type="text" value="" placeholder="Enter your name" class="form-control"  id="login-name"/>
+					<!-- <input type="text" class="login-field" value="" placeholder="Enter your name" id="login-name" /> -->
+					<label class="login-field-icon fui-man-16" for="login-name"></label>
+				</div>
+				<div class="control-group">
+					<input type="password" value="" placeholder="Password" class="form-control"  id="login-pass"/>
+					<!-- <input type="password" class="login-field" value="" placeholder="Password" id="login-pass" /> -->
+					<label class="login-field-icon fui-lock-16" for="login-pass"></label>
+				</div>
+				 <a class="btn btn-primary btn-large btn-block" href="welcome.html" onclick="return check()" >Login</a> 
+				<!-- <button id="login" onclick="return check()">
+					Login
+				</button> -->
+
+				<a class="login-link" href="#" >Lost your password?</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script >
+	function check() {
+		var login_name = document.getElementById("login-name").value;
+		var login_pass = document.getElementById("login-pass").value;
+		//var hash = hex_md5(ogin_pass);
+		if (login_name=="amdin" && login_pass=="123456") {
+			alert("用户名或者密码错误");
+			return true;
+		}else{
+			return false;
+		}	
+	}
+</script>
+
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/video.js"></script>
+<script src="js/flat-ui.min.js"></script>
+<script src="docs/assets/js/application.js"></script>
+
+</body>
+
+
+<footer>
+
+  <p class="pull-right"><a href="index.html">返回首页</a></p>
+  <p class="pull-left">©计算机学院新媒体工作室</p>
+
+</footer>
+
+
+</html>
